@@ -1,14 +1,18 @@
 <template>
     <div>
       <router-view></router-view>
-      <FooterGuide></FooterGuide>
-
+      <FooterGuide v-show="$route.meta.showFooter"></FooterGuide>
     </div>
 </template>
 
 <script>
   import FooterGuide from './components/FooterGuide/FooterGuide.vue'
+ import {reqAddress} from './api'
   export default {
+    mounted(){
+     this.$store.dispatch('getAddress')
+    }
+    ,
     components:{
       FooterGuide
     }
