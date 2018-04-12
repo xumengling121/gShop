@@ -17,7 +17,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  /*@import '../../common/stylus/mixins.styl'*/
+  @import '../../common/stylus/mixins.styl'
   .header
     background-color #02a774
     position fixed

@@ -11,8 +11,7 @@
   export default {
     mounted(){
      this.$store.dispatch('getAddress')
-    }
-    ,
+    },
     components:{
       FooterGuide
     }

@@ -10,8 +10,9 @@ return new Promise(function(resolve,reject){
     })
     if(dataString){
       dataString=dataString.substring(0,dataString.length-1)
+      url+='?'+dataString
     }
-    url+='?'+dataString
+
       promise= axios.get(url)
   }else{
   promise=axios.post(url,data)

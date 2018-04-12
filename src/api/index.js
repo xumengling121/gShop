@@ -16,3 +16,8 @@ export const sendCode=(phone)=>ajax('/api/sendcode',{phone})
 export const loginSms=({phone,code})=>ajax('/api/login_sms',{phone,code},'POST')
 //8、根据会话获取用户信息
 export const reqUserInfo = () => ajax('/api/userinfo')
+
+
+export const reqShopGoods=()=>ajax('/goods')
+export const reqShopRatings=()=>ajax('/ratings')
+export const reqShopInfo=()=>ajax('/info')
